@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+
+:root {
+	--color-primary: #343a41;
+	--color-primary-dark: #31363b;
+	--color-primary-dark-2: #252a2e;
+
+	--color-secondary: #22262a;
+
+	--color-footer: #171a1d;
+
+	--color-text: #94a4b4;
+	--color-text-dark: #5b6570;
+
+	--color-white: #fff;
+	--color-black: #000;
+	--color-gray: #565f69;
+
+	--color-linkedin: #0077b5;
+	--color-github: #333;
+	--color-email: #6fc2b0;
+
+	--color-scroll: rgb(151, 191, 211);
+
+	/* // Cubic Beziers */
+	--cubic-bezier-primary: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+	/* // Layers */
+	--layer-burger: 1000;
+	--layer-navigation: 900;
+	--layer-modal: 800;
+	--layer-contact: 700;
+
+	/* // Fonts */
+	--font-primary: Staatliches, sans-serif;
+	--font-secondary: Inconsolata, sans-serif;
+
+	/* // Grid */
+	--grid-width: 100%;
+	--gutter-vertical: 6rem;
+	--gutter-horizontal: 6rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: var(--font-primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+	min-height: 100%;
+
+	padding: 1.5rem;
+	background-color: var(--color-secondary);
+	user-select: none;
+	position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+	height: 100%;
+	font-size: 62.5%;
+
+	@media only screen and (max-width: 62.5em) {
+		font-size: 55.5%;
+	}
+
+	@media only screen and (max-width: 37.5em) {
+		font-size: 50%;
+	}
+
+	@media only screen and (min-width: 143.75em) {
+		font-size: 90%;
+	}
+
+	@media only screen and (min-width: 187.5em) {
+		font-size: 110%;
+	}
+
+	@media only screen and (min-width: 237.5em) {
+		font-size: 120%;
+	}
 }
 
-.App-link {
-  color: #61dafb;
+main {
+	width: 75%;
+
+	margin: 6rem auto;
+	margin-bottom: 8rem;
+
+	@media (max-width: 1367px) {
+		width: 85%;
+	}
+
+	@media (max-width: 768px) {
+		width: 70%;
+	}
+
+	@media only screen and (min-width: 87.5em) {
+		width: 120rem;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Scroll */
+::-webkit-scrollbar-track {
+	border-radius: 12px;
+	background-color: var(--color-footer);
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	background-color: var(--color-footer);
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 12px;
+	background-color: var(--color-scroll);
+}
+
+.row {
+	max-width: var(--grid-width);
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row:not(:last-child) {
+	margin-bottom: var(--gutter-vertical);
+}
+
+.row[class^="col-"] {
+	float: left;
+}
+.row[class^="col-"]:not(:last-child) {
+	margin-right: var(--gutter-horizontal);
+}
+
+.row .col-1-of-2 {
+	width: calc((100% - var(--gutter-horizontal)) / 2);
+}
+
+@media only screen and (max-width: 1366px) {
+	.row .col-1-of-2 {
+		width: 95%;
+	}
+
+	.row {
+		max-width: 500px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 5rem;
+	}
+
+	.row .col-1-of-2:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.row {
+		max-width: 500px;
+		margin: 0 auto 0 5.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.row {
+		margin: 0 auto 0 0;
+	}
 }

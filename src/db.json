@@ -1,0 +1,234 @@
+{
+	"tratoflix": {
+		"name": "Tratoflix",
+		"summary": "Personal project built using ReactJS on Front End and for Back end was used JSON Server to build a REST API to store data from videos and categories for Tratoflix. The server was deployed using Heroku, so the deployed application on netlify can access all the data required for get and post methods. So you can add videos and create new categories to improve the user experience if you are a Pawn Stars fan. The video list was built using react slick and the alerts were built using framer motion. Also this application uses custom hooks and react hooks to work with states through the components, to deliver a better experience and a faster app for the user. Enjoy it.",
+		"img": "tratoflix.png",
+		"demo": "https://tratoflix.netlify.app/",
+		"code": "https://github.com/luizmr/tratoflix-app",
+		"technologies": [
+			{
+				"name": "HTML & CSS"
+			},
+			{
+				"name": "JavaScript"
+			},
+			{
+				"name": "ReactJS"
+			},
+			{
+				"name": "Framer Motion"
+			},
+			{
+				"name": "React Slick"
+			},
+			{
+				"name": "Heroku"
+			},
+			{
+				"name": "JSON Server"
+			},
+			{
+				"name": "Responsive"
+			}
+		]
+	},
+	"portfolio": {
+		"name": "Portfolio",
+		"summary": "Personal project built using ReactJS and pure CSS using BEM methodology to make it fully responsive. It is a personal portfolio to make it easier to get in contact with me and also show my favorite projects. You can access every projects' demo, code and summary. Enjoy it and hit me up.",
+		"img": "logo.png",
+		"demo": "https://lmrocha.netlify.app/",
+		"code": "https://github.com/luizmr/portfolio-app",
+		"technologies": [
+			{
+				"name": "HTML & CSS"
+			},
+			{
+				"name": "JavaScript"
+			},
+			{
+				"name": "BEM"
+			},
+			{
+				"name": "ReactJS"
+			},
+			{
+				"name": "Framer Motion"
+			},
+			{
+				"name": "Responsive"
+			},
+			{
+				"name": "UI/UX"
+			}
+		]
+	},
+	"pokedex": {
+		"name": "Pokedex Master",
+		"summary": "Personal project built using ReactJS and Bootstrap 4, with axios for Poke API requests. It is a pokedex which contains pokemons from all generations, where you can access the data of each pokemon. As a pokemon fan, this is the pokedex that I always wanted and I'm really grateful that I could make it. Also, I could learn a lot about using bootstrap with react. Feel free to access the site via netlify and enjoy it.",
+		"img": "Pokedex.png",
+		"demo": "https://masterpokedex.netlify.app/",
+		"code": "https://github.com/luizmr/pokedex-app",
+		"technologies": [
+			{
+				"name": "HTML & CSS"
+			},
+			{
+				"name": "JavaScript"
+			},
+			{
+				"name": "Bootstrap"
+			},
+			{
+				"name": "ReactJS"
+			},
+			{
+				"name": "Axios"
+			},
+			{
+				"name": "REST API"
+			},
+			{
+				"name": "Responsive"
+			},
+			{
+				"name": "UI/UX"
+			}
+		]
+	},
+	"amazon": {
+		"name": "Amazon Clone",
+		"summary": "Personal project built using ReactJS with Hooks, Context API and Redux based on BEM methodology. You can sign in and logout using firebase and even create a account. Also, there are some products where you can add and remove from basket, using Context API and Redux. Enjoy it.",
+		"img": "amazonlogo.png",
+		"demo": "https://amazonclonelmr.netlify.app/",
+		"code": "https://github.com/luizmr/amazon-clone-app",
+		"technologies": [
+			{
+				"name": "HTML & CSS"
+			},
+
+			{
+				"name": "JavaScript"
+			},
+			{
+				"name": "ReactJS"
+			},
+			{
+				"name": "React Slideshow"
+			},
+			{
+				"name": "Context API"
+			},
+			{
+				"name": "Redux"
+			},
+			{
+				"name": "Firebase"
+			},
+			{
+				"name": "Responsive"
+			},
+			{
+				"name": "BEM"
+			}
+		]
+	},
+	"githubfinder": {
+		"name": "Github Data Finder",
+		"summary": "Personal project built to search every github profile you want and get useful data from it. First, you have to login/sign up to use the application. The authentication is made through Auth0.com. When you finally login in the application, it will be displayed for you a search bar to search for github profiles. When you search for a github profile, it will display some data from that profile, like: \n\n - Number of Repositories, followers, following and gists; \n - Profile with avatar image, description, blog url, company, place; \n - Useful charts about popular repositories, languages most used, stars by language and forks. \n\n You can access the github profile clicking over 'Follow' button and Logout from the application through the button in the Navbar section. With the github API, you can make 60 request per hour, so inside the application you have access about how many requests you can do and how many you did. Feel free to login and get some useful data.",
+		"img": "githubfinder.svg",
+		"demo": "https://githubdatafinder.netlify.app/",
+		"code": "https://github.com/luizmr/github-datafinder-app",
+		"technologies": [
+			{
+				"name": "HTML & CSS"
+			},
+			{
+				"name": "JavaScript"
+			},
+			{
+				"name": "ReactJS"
+			},
+			{
+				"name": "Context API"
+			},
+			{
+				"name": "Axios"
+			},
+			{
+				"name": "REST API"
+			},
+			{
+				"name": "Auth0"
+			},
+			{
+				"name": "Responsive"
+			}
+		]
+	},
+	"githubclone": {
+		"name": "Github Clone",
+		"summary": "Personal project built using ReactJS and Typescript, which is a clone of Github profile page. You can search for every user in Github (github api using fetch) and access all the repos and profile data. Also, using ThemeProvider, you can alternate between light and dark mode.",
+		"img": "githubclone.png",
+		"demo": "https://githubclonelmr.netlify.app/",
+		"code": "https://github.com/luizmr/github-clone-app",
+		"technologies": [
+			{
+				"name": "HTML & CSS"
+			},
+			{
+				"name": "JavaScript"
+			},
+			{
+				"name": "Typescript"
+			},
+			{
+				"name": "ReactJS"
+			},
+			{
+				"name": "REST API"
+			},
+			{
+				"name": "Responsive"
+			},
+			{
+				"name": "UI/UX"
+			}
+		]
+	},
+	"covidtracker": {
+		"name": "Covid-19 Tracker",
+		"summary": "Personal project built using ReactJS, pure CSS with BEM methodology and Material-UI Framework. This is a Covid-19 tracker which you can access and viasualize useful data from cases, recovered cases and deaths about every country of our world, through disease.sh API. It has an interactive world map which you can explore (leaflet map) and make it easier for you to locate the countries who is facing big troubles against corona virus. Feel free to access the application via netlify and enjoy it.",
+		"img": "covidtracker.png",
+		"demo": "https://covidtrackerlmr.netlify.app/",
+		"code": "https://github.com/luizmr/covid19-tracker-app",
+		"technologies": [
+			{
+				"name": "HTML & CSS"
+			},
+			{
+				"name": "BEM"
+			},
+			{
+				"name": "JavaScript"
+			},
+			{
+				"name": "Material-UI"
+			},
+			{
+				"name": "ReactJS"
+			},
+			{
+				"name": "Chat.js"
+			},
+			{
+				"name": "REST API"
+			},
+			{
+				"name": "Responsive"
+			},
+			{
+				"name": "UI/UX"
+			}
+		]
+	}
+}
