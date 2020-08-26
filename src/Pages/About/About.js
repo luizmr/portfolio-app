@@ -129,6 +129,11 @@ const PrimarySubText = styled.div`
 		&__top {
 			margin-bottom: 1rem;
 			margin-top: 1rem;
+
+			@media only screen and (max-width: 450px) {
+				margin-bottom: 1rem;
+				margin-top: 0.5rem;
+			}
 		}
 
 		&__bottom {
